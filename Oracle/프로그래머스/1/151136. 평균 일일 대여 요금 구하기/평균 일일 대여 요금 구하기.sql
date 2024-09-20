@@ -1,4 +1,6 @@
 -- 코드를 입력하세요
+-- ROUND('값', '자릿수')   반올림
+-- AVG(값)  평균
 SELECT ROUND(AVG(DAILY_FEE)) AS AVERAGE_FEE
 FROM CAR_RENTAL_COMPANY_CAR
 WHERE CAR_TYPE = 'SUV';
