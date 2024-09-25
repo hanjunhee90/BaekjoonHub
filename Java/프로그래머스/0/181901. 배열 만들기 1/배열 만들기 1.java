@@ -1,17 +1,15 @@
-import java.util.*;
 class Solution {
     public int[] solution(int n, int k) {
-        List<Integer> answer = new ArrayList<Integer>();
+       
+        int[] a = new int[n/k];
         
-        for(int i = 1 ; i <= n; i++){
-            if(i % k == 0){
-                answer.add(i);
-            }    
+        int count = 0;
+        for(int i = 1; i <= n ; i++){
+             if(i % k == 0){
+                a[count] = i;
+                count++;
+            } 
         }
-        int[] result = new int[answer.size()];
-        for(int i = 0; i < answer.size(); i++){
-            result[i] = answer.get(i).intValue();
-        }
-        return result;
+        return a;
     }
 }
