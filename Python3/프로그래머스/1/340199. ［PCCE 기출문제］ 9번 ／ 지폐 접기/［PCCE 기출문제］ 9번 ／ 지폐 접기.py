@@ -9,7 +9,7 @@ def solution(wallet, bill):
         # 지폐가 지갑보다 값이 작아지면 반복문 멈추게
         if bill[0] > wallet[0] or bill[1] > wallet[1]:
 
-            bill[0] = int(bill[0] / 2)
+            bill[0] = bill[0] // 2
             # 다시한번 내림차순으로 정렬하여 큰값이 앞으로 오게
             bill.sort(reverse=True)
             answer += 1
